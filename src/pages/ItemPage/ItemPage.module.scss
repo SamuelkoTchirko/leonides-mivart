@@ -1,0 +1,231 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .leftPanel{
+        width: 40%;
+        height: 70%;
+        background-color: brown;
+
+        opacity: 0.85;
+
+        transform: perspective(2000px) rotate3d(0, 1, 0, 90deg);
+        transform-origin: right;
+
+        -o-transition:.6s;
+        -ms-transition:.6s;
+        -moz-transition:.6s;
+        -webkit-transition:.6s;
+        transition:.6s;
+
+        position: relative;
+        left: 13.625%;
+    }
+
+    .rightPanel{
+        width: 40%;
+        height: 70%;
+        background-color: brown;
+
+        opacity: 0.85;
+
+        transform: perspective(2000px) rotate3d(0, 1, 0, -90deg);
+        transform-origin: left;
+
+        -o-transition:.6s;
+        -ms-transition:.6s;
+        -moz-transition:.6s;
+        -webkit-transition:.6s;
+        transition:.6s;     
+
+        position: relative;
+        right: 13.625%;
+    }
+
+    h2{
+        padding: 0;
+        text-align: center;
+
+        width: 30%;
+        z-index: 20;
+        position: relative;
+        opacity: 0;
+
+        -o-transition:.6s;
+        -ms-transition:.6s;
+        -moz-transition:.6s;
+        -webkit-transition:.6s;
+        transition:.6s;    
+    }
+
+    .firstItem{
+        height: 80vh;
+        width: 100%;
+        background-image: url(../../assets/images/image01.jpg);
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .firstItem:hover{
+
+        .leftPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        .rightPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        h2{
+            opacity: 1;
+            transition-delay: 0.4s;
+        }
+    }
+
+    .secondItem:hover{
+
+        .leftPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        .rightPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        h2{
+            opacity: 1;
+            transition-delay: 0.4s;
+        }
+    }
+
+    .thirdItem:hover{
+
+        .leftPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        .rightPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        h2{
+            opacity: 1;
+            transition-delay: 0.4s;
+        }
+    }
+
+    .fourthItem:hover{
+
+        .leftPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        .rightPanel{
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+
+        h2{
+            opacity: 1;
+            transition-delay: 0.4s;
+        }
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 160vh;
+
+        .column{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .secondItem{
+                height: 50%;
+                width: 100%;
+                background-image: url(../../assets/images/image02.jpg);
+                background-size: cover;
+
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+        
+                position: relative;
+
+                .leftPanel{
+                    left: 13.65%;
+                    background-color: chocolate;
+                }
+        
+                .rightPanel{
+                    right: 13.65%;
+                    background-color: chocolate;
+                }
+            }
+
+            .thirdItem{
+                height: 50%;
+                width: 100%;
+                background-image: url(../../assets/images/image03.jpg);
+                background-size: cover;
+
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+        
+                position: relative;
+
+                .leftPanel{
+                    left: 13.85%;
+                    background-color: cornflowerblue;
+                }
+        
+                .rightPanel{
+                    right: 13.85%;
+                    background-color: cornflowerblue;
+                }
+            }
+        }
+
+        .fourthItem{
+            width: 50%;
+            height: 100%;
+            background-image: url(../../assets/images/image04.jpg);
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+
+            position: relative;
+
+            .leftPanel{
+                left: 13.7%;
+                background-color: antiquewhite;
+            }
+    
+            .rightPanel{
+                right: 13.7%;
+                background-color: antiquewhite;
+            }
+        }
+    }
+
+}

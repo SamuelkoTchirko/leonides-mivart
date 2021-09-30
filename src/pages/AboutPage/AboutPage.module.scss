@@ -1,0 +1,109 @@
+.wrapper{
+    //height: 300vh;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    background-image: url(../../images/bg-black.svg);
+    background-size: cover;
+
+    .headerSection{
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logoSvg{
+            transform: scale(1.5);
+            position: relative;
+            top: 5vh;
+        }
+    }
+
+    .contentSection{
+        background-image: url(../../images/bg-about.svg);
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .contentWrapper{
+            //background-color: red;
+            width: 90%;
+            height: 85%;
+
+            margin-top: 30vh;
+            margin-bottom: 25vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .contentHeader{
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(../../images/header-about.svg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+
+            .content{
+                width: 55%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .tabs{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 6vh;
+                }
+
+                p{
+                    i{
+                        padding: 0;
+                        margin: 0;
+                        color: burlywood;
+                    }
+                }
+
+                .bottomContent{
+                    width: 72vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    margin-top: 5vh;
+
+                    .left{
+                        min-width: 25%;
+                    }
+
+                    .middle{
+                        width: 50%;
+                        text-align: center;
+
+                        p{
+                            margin-bottom: 10vh;
+                        }
+                    }
+
+                    .right{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
