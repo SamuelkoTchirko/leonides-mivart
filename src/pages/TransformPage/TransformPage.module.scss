@@ -1,7 +1,7 @@
 .wrapper{
-    //height: 30%;
+    //height: 300vh;
     position: relative;
-    bottom: 27vh;
+    bottom: 54vh;
     overflow: hidden;
     width: 100%;
     background-color: rgb(44, 44, 44);
@@ -10,24 +10,28 @@
 
     .headerSection{
         //overflow: hidden;
+        position: relative;
         height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        background-image: url(../../assets/paralax/bg-transform.jpg);
+        background-size: auto 500%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            transform: scale(1.5);
+            position: absolute;
+            left: -35vw;
+            top: -30vh;
+        }
 
         .left{
             width: 40%;
             height: 100%;
             position: relative;
-
-            .headSvg{
-                opacity: 0.1;
-                height: 350%;
-                position: relative;
-                bottom: 150vh;
-                left: -60vw;
-            }
 
             .circlesSvg{
                 position: absolute;
@@ -50,7 +54,7 @@
             justify-content: center;
 
             .logoSvg{
-                transform: scale(4.5);
+                transform: scale(3.2);
                 position: relative;
                 top: 5vh;
             }
@@ -95,8 +99,8 @@
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
-                background-image: url(../../images/header-need.svg);
-                background-size: auto 100%;
+                background-image: url(../../images/header-transform.png);
+                background-size: auto 60%;
                 background-repeat: no-repeat;
                 background-position: center; 
             }
@@ -108,12 +112,24 @@
                 align-items: center;
                 //text-align: center;
 
+                .largeParagraph{
+                    margin-bottom: 10vh;
+                }
+
                 p{
+                    margin-bottom: 0;
+                    padding-bottom: 0;
                     i{
                         padding: 0;
                         margin: 0;
                         color: burlywood;
                     }
+                }
+
+                i{
+                    padding: 0;
+                    margin: 0;
+                    color: burlywood;
                 }
 
                 .tabs{
@@ -122,25 +138,14 @@
                     align-items: center;
                     justify-content: center;
                     margin-bottom: 6vh;
+
+                    .middleTab{
+                        //transform: scale(5);
+                    }
                 }
                 
-                ul{
-                    width: 108%;
-                    li{
-                        margin-bottom: 6vh;
-                        list-style-type: upper-roman;
-
-                        h3{
-                            padding-bottom: 0;
-                            margin-bottom: 0;
-                            text-align: left;
-                        }
-
-                        p{
-                            padding-top: 0;
-                            margin-top: 0;
-                        }
-                    }
+                .ornament{
+                    margin-top: 15vh;
                 }
             }
         }

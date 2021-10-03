@@ -1,0 +1,281 @@
+.wrapper{
+    //height: 300vh;
+    position: relative;
+    bottom: 108vh;
+    overflow: hidden;
+    width: 100%;
+    //background-color: rgb(44, 44, 44);
+    //background-image: url(../../images/bg-black.svg);
+    background-size: cover;
+
+    .headerSection{
+        //overflow: hidden;
+        position: relative;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        //background-image: url(../../assets/paralax/bg-contact.jpg);
+        /*background-size: auto 500%;
+        background-repeat: no-repeat;
+        background-position: center;*/
+
+        img{
+            transform: scale(1.5);
+            position: absolute;
+            left: -35vw;
+            top: -30vh;
+        }
+
+        .left{
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            .circlesSvg{
+                position: absolute;
+                opacity: 0.4;
+                left: -5vw;
+                z-index: 0;          
+                transform: scale(4) rotate(-20deg);
+            }
+        }
+
+        .middle{
+            position: relative;
+            bottom: 7vh;
+
+            width: 20%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logoSvg{
+                transform: scale(3.2);
+                position: relative;
+                top: 5vh;
+            }
+        }
+
+        .right{
+            width: 40%;
+            height: 100%;
+        }
+    }
+
+    .contentSection{
+        position: relative;
+        bottom: 27vh;
+        z-index: 5;
+        background-image: url(../../images/bg-contact.svg);
+        background-size: cover;
+
+        //position: ;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .contentWrapper{
+            //background-color: red;
+            width: 100%;
+            height: 85%;
+
+            margin-top: 30vh;
+            margin-bottom: 25vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .contentHeader{
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(../../images/header-contact.png);
+                background-size: auto 45%;
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+
+            .content{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                //text-align: center;
+                //height: 500vh;
+
+                .addressWrapper{
+                    width: 70%;
+                    margin-top: 7vh;
+                    font-size: smaller;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    p{
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+
+                    .addressRow{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+
+                        .brown{
+                            color: burlywood;
+                        }
+                    }
+
+                    .bottomLine{
+                        margin-top: 2vh;
+                        min-width: 25px;
+                        min-height: 2px;
+                        background-color: burlywood;
+                    }
+                }
+
+                .formWrapper{
+                    max-width: 60%;
+                    margin-top: 15vh;
+                    //background-color: red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .row{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+
+                        .column{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;;
+
+                            input{
+                                margin-bottom: 2vh;
+                                margin-top: 2vh;
+                                border: none;
+                                background: rgba(0,0,0,0);
+                                border-bottom: burlywood 1px solid;
+                                width: 18vw;
+                            }
+
+                            textarea{
+                                margin-left: 5vw;
+                                border: none;
+                                background: rgba(0,0,0,0);
+                                border: burlywood 1px solid;
+                                width: 18vw;
+                            }
+
+                            input:focus, textarea:focus{
+                                color: rgba(0,0,0,0.5);;
+                                outline: none;
+                            }
+                        }
+
+                        .buttonWrapper{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 100%;
+
+                            button{
+                                cursor: pointer;
+                                margin-top: 10vh;
+                                border: none;
+                                background: rgba(0,0,0,0);
+                                border-bottom: burlywood 1px solid;
+                                width: 100%;
+                                padding: 5px;
+                            }
+    
+                            .buttonLine{
+                                width: 100%;
+                                height: 1px;
+                                background-color: burlywood;
+                                -o-transition:.3s;
+                                -ms-transition:.3s;
+                                -moz-transition:.3s;
+                                -webkit-transition:.3s;
+                                transition:.3s;
+                                transform-origin: bottom;
+                            }
+                        }
+
+                        .buttonWrapper:hover{
+                            .buttonLine{
+                                //height: 5px;
+                                transform: scaleY(5);
+                            }
+                        }
+                    }
+                }
+
+                .logoWrapper{
+                    margin-top: 30vh;
+                    height: 40vh;
+                    width: 50%;
+                    //background-color: red ;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .logoFooter{
+                        transform: scale(1.2);
+                        //background-color: red;
+                        margin-bottom: 7vh;
+                    }
+
+                    p{
+                        font-size: 10px;
+                        letter-spacing: 1.5px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .brown{
+                        color: burlywood;
+                    }
+
+                    .letterSpacing{
+                        letter-spacing: 2px;
+                        font-size: 12px;
+
+                        display: flex;
+
+                        .brown{
+                            margin-left: 4px;
+                            font-size: 12px;
+                            font-size: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

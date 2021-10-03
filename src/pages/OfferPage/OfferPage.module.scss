@@ -1,8 +1,5 @@
 .wrapper{
-    //height: 30%;
-    position: relative;
-    bottom: 27vh;
-    overflow: hidden;
+    //height: 300vh;
     width: 100%;
     background-color: rgb(44, 44, 44);
     background-image: url(../../images/bg-black.svg);
@@ -10,31 +7,36 @@
 
     .headerSection{
         //overflow: hidden;
+        position: relative;
         height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        background-image: url(../../assets/paralax/bg-offer.jpg);
+        background-size: auto 500%;
+        background-repeat: no-repeat;
+        background-position: center;
+        //width: 80%;
+
+        img{
+            transform: scale(1.5);
+            position: absolute;
+            left: -35vw;
+            top: -30vh;
+        }
 
         .left{
             width: 40%;
             height: 100%;
             position: relative;
 
-            .headSvg{
-                opacity: 0.1;
-                height: 350%;
-                position: relative;
-                bottom: 150vh;
-                left: -60vw;
-            }
-
             .circlesSvg{
                 position: absolute;
                 opacity: 0.4;
                 left: -30vw;
                 z-index: 0;          
-                transform: scale(5) rotateZ(-10deg);
+                transform: scale(3) ;
             }
         }
 
@@ -50,7 +52,7 @@
             justify-content: center;
 
             .logoSvg{
-                transform: scale(4.5);
+                transform: scale(3.2);
                 position: relative;
                 top: 5vh;
             }
@@ -65,11 +67,9 @@
     .contentSection{
         position: relative;
         bottom: 27vh;
-        z-index: 5;
-        background-image: url(../../images/bg-needs.svg);
+        
+        background-image: url(../../images/bg-offer.svg);
         background-size: cover;
-
-        //position: ;
 
         display: flex;
         align-items: center;
@@ -95,7 +95,7 @@
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
-                background-image: url(../../images/header-need.svg);
+                background-image: url(../../images/header-offer.svg);
                 background-size: auto 100%;
                 background-repeat: no-repeat;
                 background-position: center; 
@@ -106,7 +106,14 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                //text-align: center;
+                
+                .tabs{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 6vh;
+                }
 
                 p{
                     i{
@@ -116,31 +123,8 @@
                     }
                 }
 
-                .tabs{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 6vh;
-                }
-                
-                ul{
-                    width: 108%;
-                    li{
-                        margin-bottom: 6vh;
-                        list-style-type: upper-roman;
-
-                        h3{
-                            padding-bottom: 0;
-                            margin-bottom: 0;
-                            text-align: left;
-                        }
-
-                        p{
-                            padding-top: 0;
-                            margin-top: 0;
-                        }
-                    }
+                .ornament{
+                    margin-top: 10vh;
                 }
             }
         }
