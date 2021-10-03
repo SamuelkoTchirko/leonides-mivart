@@ -31,7 +31,7 @@ function TransformPage() {
     }, [])
 
   return (
-    <div className={styles.wrapper}>
+    <div id="transform" className={styles.wrapper}>
       <div ref={parallaxSection} className={styles.headerSection}>
         <img src={Background} alt="" />
         <div className={styles.left}>

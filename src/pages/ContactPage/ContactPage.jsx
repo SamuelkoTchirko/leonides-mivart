@@ -25,7 +25,7 @@ function ContactPage() {
     }, [])
 
   return (
-    <div className={styles.wrapper}>
+    <div id="contact" className={styles.wrapper}>
       <div ref={parallaxSection} className={styles.headerSection}>
         <img src={Background} alt="" />
         <div className={styles.left}>

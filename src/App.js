@@ -13,18 +13,19 @@ import ContactPage from "./pages/ContactPage/ContactPage"
 
 //Component imports
 import Navigation from "./components/Navigation/Navigation"
+import Menu from "./components/Menu/Menu"
 
 function App() {
   return (
     <div className={styles.app}>
-      <Navigation className={styles.navigation}/>
+      <Navigation className={styles.navigation} />
       <LandingPage />
-      <AboutPage />
+      <AboutPage id="about"/>
       <ItemPage />
-      <OfferPage />
-      <NeedsPage />
-      <TransformPage />
-      <PartnersPage />
+      <OfferPage id="offer"/>
+      <NeedsPage id="needs"/>
+      <TransformPage id="transform"/>
+      <PartnersPage id="partners"/>
       <MapPage />
       <ContactPage />
     </div>

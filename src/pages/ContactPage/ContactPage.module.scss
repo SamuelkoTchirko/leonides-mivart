@@ -1,5 +1,6 @@
 .wrapper{
     //height: 300vh;
+    z-index: 0;
     position: relative;
     bottom: 108vh;
     overflow: hidden;
@@ -177,15 +178,16 @@
                                 border: none;
                                 background: rgba(0,0,0,0);
                                 border-bottom: burlywood 1px solid;
-                                width: 18vw;
+                                width: 20vw;
                             }
 
                             textarea{
-                                margin-left: 5vw;
+                                margin-left: 2vw;
                                 border: none;
                                 background: rgba(0,0,0,0);
                                 border: burlywood 1px solid;
-                                width: 18vw;
+                                width: 20vw;
+                                resize: none;
                             }
 
                             input:focus, textarea:focus{

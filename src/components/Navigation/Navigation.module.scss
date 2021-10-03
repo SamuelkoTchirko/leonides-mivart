@@ -1,8 +1,149 @@
-.wrapper{
+.menuClosed{
+    z-index: 2;
+    background-image: url(../../images/head.svg);
+    background-position: -12vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50vw 100vh;
+    background-color: white;
+    height: 100%;
+    width: 50vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -50vw;
+    overflow-x: hidden;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    .upper{
+        display: flex;
+        height: 5vh;
+        //background-color: red;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{
+            font-size: smaller;
+        }
+
+        .menuSvgRot{
+            
+        }
+    }
+
+    .items{
+        min-height: 90vh;
+        width: 95%;
+        //background-color: yellow;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .itemsRow{
+            position: relative;
+            top: 10vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.menuOpened{
+    z-index: 2;
+    background-image: url(../../images/head.svg);
+    background-position: -12vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50vw 100vh;
+    background-color: white;
+    height: 100%;
+    width: 50vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0vw;
+    overflow-x: hidden;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    .upper{
+        display: flex;
+        height: 5vh;
+        //background-color: red;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{
+            font-size: smaller;
+        }
+
+        .menuSvgRot{
+            
+        }
+    }
+
+    .items{
+        min-height: 90vh;
+        width: 95%;
+        //background-color: yellow;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .itemsRow{
+            position: relative;
+            top: 10vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.navOpened{
     z-index: 50;
     margin-top: 4vh;
     position: fixed;
     width: 70vw;
+    top: 0;
+
+    -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
 
     .navItems{
         width: 100%;
@@ -80,6 +221,117 @@
                 width: 100px;
                 position: relative;
                 bottom: 10px;
+                cursor: pointer;
+
+                .menuText{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    font-size: 12px;
+                    letter-spacing: 4px;
+                    position: relative;
+                    left: 2px;
+                }
+
+                .menuSvg{
+                    transform: scale(1.5);
+                    min-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.navClosed{
+    z-index: 50;
+    margin-top: 4vh;
+    position: fixed;
+    width: 70vw;
+    top: -20vh;
+
+    -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+
+    .navItems{
+        width: 100%;
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+            li{
+                height: 20px;
+                width: 70px;
+                display: inline-block;
+                //background-color: yellow;
+
+                .itemButton{
+                    text-decoration: none;
+                    height: 100%;
+                    width: 100%;
+                    line-height: 0.50;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p{
+                        padding: 0;
+                        font-size: smaller;
+                    }
+                }
+                
+                .itemHover{
+                    padding-top: 10px;
+                    text-decoration: none;
+                    height: 100%;
+                    width: 100%;
+                    line-height: 0.50;
+
+                    p{
+                        padding: 0;
+                        font-size: smaller;
+                    }
+                }
+
+                .itemHover:before{
+                    position: absolute;
+                    
+                    content: '';
+                    width: 70px;
+                    background-color: black;
+                    height: 3px;
+
+                    -o-transition:.2s;
+  		            -ms-transition:.2s;
+                    -moz-transition:.2s;
+                    -webkit-transition:.2s;
+                    transition:.2s;
+                }
+
+            }
+
+            li:hover .itemHover:before{
+                height: 8px;
+            }
+
+            .itemRight{
+                p{
+                    text-align: end;
+                }
+            }
+
+            .itemMenu{
+                width: 100px;
+                position: relative;
+                bottom: 10px;
+                cursor: pointer;
 
                 .menuText{
                     text-decoration: none;

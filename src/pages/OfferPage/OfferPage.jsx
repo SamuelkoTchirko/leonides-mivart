@@ -16,21 +16,54 @@ import RectangleTab from "../../components/RectangleTab/RectangleTab"
 //Parallax
 import simpleParallax from 'simple-parallax-js';
 
+//Animations
+import { gsap } from "gsap";
+import { ScrollTrigger} from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
+
 function OfferPage() {
 
     const parallaxSection = useRef();
 
-    useEffect(() => {
-      //Potrebujem nastavit timeout, pretoze ak by som tak neurobil, vzdy by sa jeden parallax neaktivoval
-      setTimeout(()=>{
-        new simpleParallax(parallaxSection.current, {
-          scale: 0.4
-        });
-      }, 15)
-    }, [])
+    const tl2 = useRef();
+
+  useEffect(() => {         
+    tl2.current = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#offerTabs",
+        start: "top center"
+      }
+    })
+    .from(".tab4", {
+      y: 500, 
+      duration: 0.8,
+      opacity: 0
+    })
+    .from(".tab5", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3")
+    .from(".tab6", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3");
+
+  });
+
+  useEffect(() => {
+    //Potrebujem nastavit timeout, pretoze ak by som tak neurobil, vzdy by sa jeden parallax neaktivoval
+    setTimeout(()=>{
+      new simpleParallax(parallaxSection.current, {
+        scale: 0.4
+      });
+    }, 15)
+  }, [])
 
   return (
-    <div className={styles.wrapper}>
+    <div  id="offers" className={styles.wrapper}>
       <div  ref={parallaxSection} className={styles.headerSection}>
         <img src={Background} alt="" />
         <div className={styles.left}>
@@ -51,10 +84,10 @@ function OfferPage() {
             <OrnamentSvg></OrnamentSvg>
           </div>
           <div className={styles.content}>
-            <div className={styles.tabs}>
-              <RectangleTab first_line="" second_line="Informácie" image="menu-offer-1.jpg"></RectangleTab>
-              <RectangleTab first_line="Osobný" second_line="Rozvoj" image="menu-02.jpg"></RectangleTab>
-              <RectangleTab first_line="" second_line="Príležitosť" image="menu-03.jpg"></RectangleTab>
+            <div className={styles.tabs} id="offerTabs">
+              <div className="tab4"><RectangleTab first_line="" second_line="Informácie" image="menu-offer-1.jpg"></RectangleTab></div>
+              <div className="tab5"><RectangleTab first_line="Osobný" second_line="Rozvoj" image="menu-02.jpg"></RectangleTab></div>
+              <div className="tab6"><RectangleTab first_line="" second_line="Príležitosť" image="menu-03.jpg"></RectangleTab></div>
             </div>
             <h3>
               Informácie

@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 import styles from "./AboutPage.module.scss"
 
 //Images
@@ -9,9 +11,47 @@ import moneyImage from '../../assets/images/money_2.png'
 //Components
 import RectangleTab from "../../components/RectangleTab/RectangleTab"
 
+//Animations
+import { gsap } from "gsap";
+import { ScrollTrigger} from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
+
 function AboutPage() {
+
+  const tl = useRef();
+
+  useEffect(() => {         
+
+
+    tl.current = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#aboutTabs",
+        start: "top center"
+      }
+    })
+    .from(".tab1", {
+      y: 500, 
+      duration: 0.8,
+      opacity: 0
+    })
+    .from(".tab2", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3")
+    .from(".tab3", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3");
+
+
+  });
+
+
   return (
-    <div className={styles.wrapper}>
+    <div id="about" className={styles.wrapper}>
       <div className={styles.headerSection}>
         <LogoSvg className={styles.logoSvg}></LogoSvg>
       </div>
@@ -22,11 +62,11 @@ function AboutPage() {
             <p>LEONIDES</p>
             <OrnamentSvg></OrnamentSvg>
           </div>
-          <div className={styles.content}>
-            <div className={styles.tabs}>
-              <RectangleTab first_line="Inšpirovaní" second_line="históriou" image="menu-01.jpg"></RectangleTab>
-              <RectangleTab first_line="Vízia" second_line="a poslanie" image="menu-02.jpg"></RectangleTab>
-              <RectangleTab first_line="Hodnoty" second_line="leonides" image="menu-03.jpg"></RectangleTab>
+          <div className={styles.content}> 
+            <div className={styles.tabs} id="aboutTabs">
+              <div className="tab1"><RectangleTab first_line="Inšpirovaní" second_line="históriou" image="menu-01.jpg"></RectangleTab></div>
+              <div className="tab2"><RectangleTab first_line="Vízia" second_line="a poslanie" image="menu-02.jpg"></RectangleTab></div>
+              <div className="tab3"><RectangleTab first_line="Hodnoty" second_line="leonides" image="menu-03.jpg"></RectangleTab></div>
             </div>
             <h2>
               Inšpirovaní históriou

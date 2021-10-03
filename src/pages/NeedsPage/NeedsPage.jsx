@@ -30,7 +30,7 @@ function NeedsPage() {
     }, [])
 
   return (
-    <div className={styles.wrapper}>
+    <div id="needs" className={styles.wrapper}>
       <div ref={parallaxSection} className={styles.headerSection}>
         <img src="" alt="" />
         <div className={styles.left}>
