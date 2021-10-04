@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    //background-color: whitesmoke;
 
     .leftPanel{
         width: 40%;
         height: 70%;
-        background-color: brown;
+        //background-color: brown;
 
         opacity: 0.85;
 
@@ -27,7 +28,7 @@
     .rightPanel{
         width: 40%;
         height: 70%;
-        background-color: brown;
+        //background-color: brown;
 
         opacity: 0.85;
 
@@ -78,10 +79,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         h2{
@@ -94,10 +97,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         h2{
@@ -110,10 +115,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         h2{
@@ -126,10 +133,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
+            background-color: brown;
         }
 
         h2{
@@ -169,12 +178,12 @@
 
                 .leftPanel{
                     left: 13.65%;
-                    background-color: chocolate;
+                    //background-color: chocolate;
                 }
         
                 .rightPanel{
                     right: 13.65%;
-                    background-color: chocolate;
+                    //background-color: chocolate;
                 }
             }
 
@@ -192,13 +201,13 @@
                 position: relative;
 
                 .leftPanel{
-                    left: 13.85%;
-                    background-color: cornflowerblue;
+                    left: 15%;
+                    //background-color: cornflowerblue;
                 }
         
                 .rightPanel{
-                    right: 13.85%;
-                    background-color: cornflowerblue;
+                    right: 15%;
+                    //background-color: cornflowerblue;
                 }
             }
         }
@@ -217,13 +226,15 @@
             position: relative;
 
             .leftPanel{
+                height: 86%;
                 left: 13.7%;
-                background-color: antiquewhite;
+                //background-color: antiquewhite;
             }
     
             .rightPanel{
+                height: 86%;
                 right: 13.7%;
-                background-color: antiquewhite;
+                //background-color: antiquewhite;
             }
         }
     }

@@ -1,10 +1,16 @@
+@media (max-width: 1000px){
+    .wrapper{
+        width: 95%;
+    }
+}
+
 .wrapper{
     //height: 300vh;
     z-index: 0;
     position: relative;
     bottom: 54vh;
     overflow: hidden;
-    width: 100%;
+    width: 103%;
     background-color: rgb(44, 44, 44);
     background-image: url(../../images/bg-black.svg);
     background-size: cover;

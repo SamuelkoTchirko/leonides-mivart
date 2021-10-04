@@ -16,9 +16,47 @@ import CircleTab from "../../components/CircleTab/CircleTab"
 //Parallax
 import simpleParallax from 'simple-parallax-js';
 
+//Animations
+import { gsap } from "gsap";
+import { ScrollTrigger} from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
+
 function NeedsPage() {
 
     const parallaxSection = useRef();
+
+    const tl2 = useRef();
+
+  useEffect(() => {         
+    tl2.current = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#needsTabs",
+        start: "top center"
+      }
+    })
+    .from(".tab7", {
+      y: 500, 
+      duration: 0.8,
+      opacity: 0
+    })
+    .from(".tab8", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3")
+    .from(".tab9", {
+      y: 500, 
+      duration: 1.4,
+      opacity: 0
+    }, "<0.3")
+    .from(".tab10", {
+      y: 500, 
+      duration: 1.5,
+      opacity: 0
+    }, "<0.3");
+
+  });
 
     useEffect(() => {
       //Potrebujem nastavit timeout, pretoze ak by som tak neurobil, vzdy by sa jeden parallax neaktivoval
@@ -52,11 +90,11 @@ function NeedsPage() {
             <OrnamentSvg></OrnamentSvg>
           </div>
           <div className={styles.content}>
-            <div className={styles.tabs}>
-              <CircleTab first_line="" second_line="Deti" image="menu-need-1.jpg"></CircleTab>
-              <CircleTab first_line="" second_line="Bývanie" image="menu-need-2.jpg"></CircleTab>
-              <CircleTab first_line="" second_line="Sporenie" image="menu-need-3.jpg"></CircleTab>
-              <CircleTab first_line="" second_line="Dôchodok" image="menu-need-4.jpg"></CircleTab>
+            <div className={styles.tabs} id="needsTabs">
+              <div className="tab7"><CircleTab first_line="" second_line="Deti" image="menu-need-1.jpg"></CircleTab></div>
+              <div className="tab8"><CircleTab first_line="" second_line="Bývanie" image="menu-need-2.jpg"></CircleTab></div>
+              <div className="tab9"><CircleTab first_line="" second_line="Sporenie" image="menu-need-3.jpg"></CircleTab></div>
+              <div className="tab10"><CircleTab first_line="" second_line="Dôchodok" image="menu-need-4.jpg"></CircleTab></div>
             </div>
             <p>
               <i>“ V Taliansku ľudia často používajú termín „sacrificio“ 

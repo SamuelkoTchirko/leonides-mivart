@@ -12,9 +12,42 @@ import Background from "../../assets/paralax/bg-contact.jpg";
 //Parallax
 import simpleParallax from 'simple-parallax-js';
 
+//Animations
+import { gsap } from "gsap";
+import { ScrollTrigger} from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
+
 function ContactPage() {
 
     const parallaxSection = useRef();
+
+    const tl2 = useRef();
+
+  useEffect(() => {         
+    tl2.current = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#contactForm",
+        start: "top center"
+      }
+    })
+    .from("#addressWrapper", {
+      y: 500, 
+      duration: 0.8,
+      opacity: 0
+    })
+    .from("#contactFirstAnim", {
+      y: 500, 
+      duration: 1.2,
+      opacity: 0
+    }, "<0.3")
+    .from("#contactSecondAnim", {
+      y: 500, 
+      duration: 1.4,
+      opacity: 0
+    }, "<0.3");
+
+  });
 
     useEffect(() => {
       setTimeout(()=>{
@@ -45,8 +78,8 @@ function ContactPage() {
             <p>LEONIDES</p>
             <OrnamentSvg></OrnamentSvg>
           </div>
-          <div className={styles.content}>
-            <div className={styles.addressWrapper}>
+          <div className={styles.content} id="contactForm">
+            <div className={styles.addressWrapper} id="addressWrapper">
               <p className={styles.addressRow}>Adresa<pre> </pre><p className={styles.brown}>Levočská 5, Prešov, 080 01</p></p>
               <p className={styles.addressRow}>Telefón +421 905 181 972</p>
               <p className={styles.addressRow}>Mesto<pre> </pre><p className={styles.brown}>Prešov / Slovakia</p></p>
@@ -55,7 +88,7 @@ function ContactPage() {
 
             <div className={styles.formWrapper}>
               <form action="">
-              <div className={styles.row}>
+              <div className={styles.row} id="contactFirstAnim">
                 <div className={styles.column}>
                   <input placeholder="Meno" type="text" required/>
                   <input placeholder="Email" type="email" required/>
@@ -65,7 +98,7 @@ function ContactPage() {
                   <textarea minlength="10" placeholder="Odkaz..." cols="30" rows="7" required></textarea>
                 </div>
               </div>
-              <div className={styles.row}>
+              <div className={styles.row} id="contactSecondAnim">
                 <div className={styles.buttonWrapper}>
                   <button type="submit">ODOSLAŤ</button>
                   <div className={styles.buttonLine}></div>
