@@ -229,13 +229,15 @@
                                 -webkit-transition:.3s;
                                 transition:.3s;
                                 transform-origin: bottom;
+                                position:absolute;
+                                bottom: 0;
                             }
                         }
 
                         .buttonWrapper:hover{
                             .buttonLine{
-                                //height: 5px;
-                                transform: scaleY(5);
+                                height: 6px;
+                                //transform: scaleY(5);
                             }
                         }
                     }

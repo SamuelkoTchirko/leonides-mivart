@@ -1,3 +1,46 @@
+@media (max-width: 1380px){
+    .wrapper{
+        
+        .fourthItem{
+            
+            h2{
+                width: 9.9vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .wrapper{
+        
+        .fourthItem{
+            
+            h2{
+                width: 13.75vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px){
+    .wrapper{
+        
+        .secondItem{
+            
+            h2{
+                width: 13.7vw;
+            }
+        }
+
+        .firstItem{
+            
+            h2{
+                width: 27.25vw;
+            }
+        }
+    }
+}
+
 .wrapper{
     width: 100%;
     display: flex;
@@ -50,6 +93,7 @@
         text-align: center;
 
         width: 30%;
+        //width: 9.9vw;
         z-index: 20;
         position: relative;
         opacity: 0;

@@ -13,7 +13,7 @@ import ContactPage from "./pages/ContactPage/ContactPage"
 
 //Component imports
 import Navigation from "./components/Navigation/Navigation"
-import Menu from "./components/Menu/Menu"
+import Socials from "./components/Socials/Socials"
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
       <PartnersPage id="partners"/>
       <MapPage />
       <ContactPage />
+      <Socials />
     </div>
   );
 }

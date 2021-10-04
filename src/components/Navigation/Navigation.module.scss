@@ -1,3 +1,22 @@
+@media (max-width: 850px){
+
+    .menuClose{
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        min-width: 100vw;
+    }
+
+    .menuOpened{
+        min-width: 100vw;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0vw;
+    }
+}
+
 .menuClosed{
     z-index: 2;
     background-image: url(../../images/head.svg);
@@ -103,6 +122,7 @@
 
         h3{
             font-size: smaller;
+            margin-left: 15px;
         }
 
         .menuSvgRot{
@@ -147,6 +167,7 @@
 
     .navItems{
         width: 100%;
+        cursor: pointer;
 
         ul{
             list-style-type: none;
@@ -159,7 +180,7 @@
             
             li{
                 height: 20px;
-                width: 70px;
+                width: 45px;
                 display: inline-block;
                 //background-color: yellow;
 
@@ -196,9 +217,9 @@
                     position: absolute;
                     
                     content: '';
-                    width: 70px;
+                    width: 45px;
                     background-color: black;
-                    height: 3px;
+                    height: 1px;
 
                     -o-transition:.2s;
   		            -ms-transition:.2s;
@@ -210,7 +231,7 @@
             }
 
             li:hover .itemHover:before{
-                height: 8px;
+                height: 5px;
             }
 
             .itemRight{
@@ -229,14 +250,15 @@
                     text-decoration: none;
                     color: black;
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 8px;
                     letter-spacing: 4px;
+                    top: 3px;
                     position: relative;
                     left: 2px;
                 }
 
                 .menuSvg{
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                     min-height: 100%;
                 }
             }
@@ -306,9 +328,9 @@
                     position: absolute;
                     
                     content: '';
-                    width: 70px;
+                    width: 45px;
                     background-color: black;
-                    height: 3px;
+                    height: 1px;
 
                     -o-transition:.2s;
   		            -ms-transition:.2s;
@@ -320,7 +342,7 @@
             }
 
             li:hover .itemHover:before{
-                height: 8px;
+                height: 5px;
             }
 
             .itemRight{
@@ -346,7 +368,7 @@
                 }
 
                 .menuSvg{
-                    transform: scale(1.5);
+                    transform: scale(1.3);
                     min-height: 100%;
                 }
             }
