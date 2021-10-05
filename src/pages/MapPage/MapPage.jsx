@@ -4,8 +4,6 @@ import styles from "./MapPage.module.scss"
 
 import Map from "../../components/Map/Map"
 
-//import ReactDependentScript from "react-dependent-script";
-
 function MapPage() {
 
   return (

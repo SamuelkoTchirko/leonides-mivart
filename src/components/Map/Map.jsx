@@ -8,8 +8,6 @@ import {
   Marker
 } from "react-google-maps";
 
-import ReactDependentScript from "react-dependent-script";
-
 import MarkerPng from "../../images/marker.png"
 
 const Map = compose(
