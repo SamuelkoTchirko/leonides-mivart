@@ -4,6 +4,7 @@ import styles from "./MapPage.module.scss"
 
 import Map from "../../components/Map/Map"
 
+
 function MapPage() {
 
   return (
