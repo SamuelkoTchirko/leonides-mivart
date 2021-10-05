@@ -5,6 +5,7 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
+  GoogleMapLoader,
   Marker
 } from "react-google-maps";
 
@@ -21,11 +22,16 @@ const Map = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap defaultZoom={17} defaultCenter={{ lat: 49.000982215182134, lng: 21.237334978470283 }}>
-    {(
-      <Marker defaultIcon={MarkerPng} position={{ lat: 49.000982215182134, lng: 21.237334978470283 }} />
-    )}
-  </GoogleMap>
+  <GoogleMapLoader
+    containerElement={<div/>}
+    googleMapElement={
+      <GoogleMap defaultZoom={17} defaultCenter={{ lat: 49.000982215182134, lng: 21.237334978470283 }}>
+        {(
+          <Marker defaultIcon={MarkerPng} position={{ lat: 49.000982215182134, lng: 21.237334978470283 }} />
+        )}
+      </GoogleMap>
+    }
+  />
 ));
 
 export default Map
