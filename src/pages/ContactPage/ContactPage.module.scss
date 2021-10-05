@@ -33,12 +33,12 @@
 
 @font-face {
     font-family: 'Mostra Nuova Bold';
-    src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
+    src: url(../../assets/fonts/MostraNuova-Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Myriad Pro Light';
-    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+    src: url(../../assets/fonts/MyriadPro-Light.ttf) format('truetype');
 }
 
 .wrapper{
@@ -66,9 +66,9 @@
         background-position: center;*/
 
         img{
-            transform: scale(1.5);
+            transform: scale(1.8);
             position: absolute;
-            left: -35vw;
+            left: -20vw;
             top: -30vh;
         }
 

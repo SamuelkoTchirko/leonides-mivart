@@ -2,12 +2,21 @@
 
 @font-face {
     font-family: 'Myriad Pro Light';
-    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+    src: url(../../assets/fonts/MyriadPro-Light.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Mostra Nuova';
-    src: url(../../fonts/MostraNuova-Regular.ttf) format('truetype');
+    src: url(../../assets/fonts/MostraNuova-Regular.ttf) format('truetype');
+}
+
+@media (min-height: 800px){
+    .wrapper{
+        .imgHolder{
+            position: relative;
+            bottom: 3vh;
+        }
+    }
 }
 
 a{

@@ -1,3 +1,8 @@
+import React, { useRef, useState, useEffect } from 'react';
+
+import handleViewport from 'react-in-viewport';
+import { useInViewport } from 'react-in-viewport';
+
 import styles from './App.module.scss';
 
 //Page imports
@@ -16,6 +21,7 @@ import Navigation from "./components/Navigation/Navigation"
 import Socials from "./components/Socials/Socials"
 
 function App() {
+
   return (
     <div className={styles.app}>
       <Navigation className={styles.navigation} />

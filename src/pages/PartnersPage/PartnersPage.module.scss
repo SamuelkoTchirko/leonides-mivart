@@ -26,12 +26,12 @@
 
 @font-face {
     font-family: 'Mostra Nuova Bold';
-    src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
+    src: url(../../assets/fonts/MostraNuova-Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Myriad Pro Light';
-    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+    src: url(../../assets/fonts/MyriadPro-Light.ttf) format('truetype');
 }
 
 .wrapper{
@@ -53,16 +53,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        background-image: url(../../assets/paralax/bg-transform.jpg);
+        background-image: url(../../assets/paralax/bg-offer.jpg);
         background-size: auto 500%;
         background-repeat: no-repeat;
         background-position: center;
         //width: 80%;
 
         img{
-            transform: scale(1.5);
+            transform: scale(1.8);
             position: absolute;
-            left: -35vw;
+            left: -20vw;
             top: -30vh;
         }
 
@@ -74,9 +74,9 @@
             .circlesSvg{
                 position: absolute;
                 opacity: 0.4;
-                left: -30vw;
+                left: -42vw;
                 z-index: 0;          
-                transform: scale(3) ;
+                transform: scale(3) rotateZ(-30deg);
             }
         }
 

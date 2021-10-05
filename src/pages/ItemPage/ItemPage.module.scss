@@ -69,6 +69,25 @@
                     min-height: 50vh;
                     max-height: 50vh;
                     min-width: 100%;
+
+                    h2{
+                        position: absolute;
+                        top: 25%;
+                        left: 40%;
+                        text-align: center;
+                    }
+    
+                    .leftPanel{
+                        height: 86%;
+                        
+                        margin-right: 13.65vw;
+                    }
+            
+                    .rightPanel{
+                        height: 86%;
+                        margin-left: 13.65vw;
+                        //background-color: antiquewhite;
+                    }
                 }
     
                 .thirdItem{
@@ -82,6 +101,25 @@
                 min-height: 50vh;
                 max-height: 50vh;
                 min-width: 100%;
+
+                h2{
+                    position: absolute;
+                    top: 25%;
+                    left: 40%;
+                    text-align: center;
+                }
+
+                .leftPanel{
+                    height: 86%;
+                    
+                    margin-right: 13.65vw;
+                }
+        
+                .rightPanel{
+                    height: 86%;
+                    margin-left: 13.65vw;
+                    //background-color: antiquewhite;
+                }
             }
         }
     }
