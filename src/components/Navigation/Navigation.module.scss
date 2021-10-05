@@ -19,6 +19,32 @@
     }
 }
 
+@media (max-width: 600px){
+    .navClosed{
+        min-width: 100vw;
+
+        li{
+            max-width: 30px;
+        }
+
+        .itemHover:before{
+            max-width: 30px;
+        }
+    }
+
+    .navOpened{
+        min-width: 100vw;
+
+        li{
+            max-width: 30px;
+        }
+
+        .itemHover:before{
+            max-width: 30px;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Mostra Nuova';
     src: url(../../fonts/MostraNuova-Light.ttf) format('truetype');

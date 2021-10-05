@@ -5,7 +5,22 @@
     src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
 }
 
+@media (max-width: 1000px){
+    .wrapper{
+        min-width: 18vw;
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 700px){
+    .wrapper{
+        min-width: 20vw;
+        max-height: 30vh;
+    }
+}
+
 .wrapper{
+    //background-color: red;
     width: 10vw;
     padding-top: 5vh;
     display: flex;
@@ -57,6 +72,8 @@
             flex-shrink: 0;
             min-width: 100%;
             min-height: 100%;
+            max-width: 100%;
+            max-height: 100%;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
             -o-transition:.3s;

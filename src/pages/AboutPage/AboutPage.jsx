@@ -64,9 +64,9 @@ function AboutPage() {
           </div>
           <div className={styles.content}> 
             <div className={styles.tabs} id="aboutTabs">
-              <div className="tab1"><RectangleTab first_line="Inšpirovaní" second_line="históriou" image="menu-01.jpg"></RectangleTab></div>
-              <div className="tab2"><RectangleTab first_line="Vízia" second_line="a poslanie" image="menu-02.jpg"></RectangleTab></div>
-              <div className="tab3"><RectangleTab first_line="Hodnoty" second_line="leonides" image="menu-03.jpg"></RectangleTab></div>
+              <div className="tab1"><RectangleTab first_line="Inšpirovaní" second_line="históriou" image="menu-about-1.jpg"></RectangleTab></div>
+              <div className="tab2"><RectangleTab first_line="Vízia" second_line="a poslanie" image="menu-about-2.jpg"></RectangleTab></div>
+              <div className="tab3"><RectangleTab first_line="Hodnoty" second_line="leonides" image="menu-about-3.jpg"></RectangleTab></div>
             </div>
             <h2>
               Inšpirovaní históriou

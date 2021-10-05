@@ -86,8 +86,8 @@ function OfferPage() {
           <div className={styles.content}>
             <div className={styles.tabs} id="offerTabs">
               <div className="tab4"><RectangleTab first_line="" second_line="Informácie" image="menu-offer-1.jpg"></RectangleTab></div>
-              <div className="tab5"><RectangleTab first_line="Osobný" second_line="Rozvoj" image="menu-02.jpg"></RectangleTab></div>
-              <div className="tab6"><RectangleTab first_line="" second_line="Príležitosť" image="menu-03.jpg"></RectangleTab></div>
+              <div className="tab5"><RectangleTab first_line="Osobný" second_line="Rozvoj" image="menu-offer-2.jpg"></RectangleTab></div>
+              <div className="tab6"><RectangleTab first_line="" second_line="Príležitosť" image="menu-offer-3.jpg"></RectangleTab></div>
             </div>
             <h3>
               Informácie

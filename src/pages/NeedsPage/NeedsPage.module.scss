@@ -6,6 +6,43 @@
     }
 }
 
+@media (max-width: 780px){
+    .contentWrapper{
+        min-width: 90%;
+
+        .content{
+            min-width: 90%;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .headerSection{
+        max-height: 50vh;
+
+        .left{
+            .headSvg{
+                display: none;
+            }
+
+            .circlesSvg{
+                display: none;      
+            }
+        }
+    }
+
+    .contentHeader{
+        margin-top: 25vh;
+    }
+
+    .tabs{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @font-face {
     font-family: 'Mostra Nuova Bold';
     src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');

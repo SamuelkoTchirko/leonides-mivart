@@ -6,6 +6,31 @@
     }
 }
 
+@media (max-width: 780px){
+    .contentWrapper{
+        min-width: 90%;
+
+        .content{
+            min-width: 90%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .formWrapper{
+        min-width: 90vw;
+        max-width: 100%;
+
+        input{
+            min-width: 40vw;
+        }
+
+        textarea{
+            min-width: 40vw;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Mostra Nuova Bold';
     src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
