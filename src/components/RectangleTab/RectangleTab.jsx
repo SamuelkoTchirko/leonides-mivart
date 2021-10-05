@@ -18,12 +18,12 @@ function RectangleTab(props) {
 
   return (
     <div className={styles.wrapper}>
-        <p className={styles.tabText}>
-            {props.first_line}
+        <div className={styles.tabText}>
+            <p>{props.first_line}</p>
             <br />
-            {props.second_line}
+            <p>{props.second_line}</p>
             <div className={styles.upperLine}></div>
-        </p>
+        </div>
         <div className={styles.imgHolder}>
             <img src={image} alt="" />
         </div>

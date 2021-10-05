@@ -160,6 +160,21 @@
                     }
                 }
 
+                .grayTextWrap{
+                    font-family: 'Myriad Pro Light' , sans-serif;
+                    text-align: center;
+                    color: $textgray;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p{
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
                 .bottomContent{
                     width: 72vw;
                     display: flex;

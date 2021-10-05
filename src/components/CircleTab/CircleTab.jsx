@@ -18,12 +18,12 @@ function CircleTab(props) {
 
   return (
     <div className={styles.wrapper}>
-        <p>
-            { props.first_line }
+        <div className={styles.textWrapper}>
+            <p>{ props.first_line }</p>
             <br />
-            { props.second_line }
+            <p>{ props.second_line }</p>
             { props.second_line == "" ? <></> : <div className={styles.upperLine}></div>}
-        </p>
+        </div>
         <div className={styles.imgHolder}>
             <img src={image} alt="" />
         </div>

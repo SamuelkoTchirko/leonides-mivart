@@ -16,6 +16,28 @@
     }
 }
 
+@media (max-width: 570px){
+    .contentHeader{
+        margin-top: 10vh;
+    }
+
+    .left{
+        .headSvg{
+            display: none;
+        }
+
+        .circlesSvg{
+            display: none;      
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .contentHeader{
+        margin-top: 20vh;
+    }
+}
+
 @media (max-width: 450px){
     .headerSection{
         max-height: 50vh;
@@ -29,10 +51,6 @@
                 display: none;      
             }
         }
-    }
-
-    .contentHeader{
-        margin-top: 25vh;
     }
 }
 

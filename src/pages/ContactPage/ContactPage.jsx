@@ -80,9 +80,9 @@ function ContactPage() {
           </div>
           <div className={styles.content} id="contactForm">
             <div className={styles.addressWrapper} id="addressWrapper">
-              <p className={styles.addressRow}>Adresa<pre> </pre><p className={styles.brown}>Levočská 5, Prešov, 080 01</p></p>
+              <pre><p className={styles.addressRow}>Adresa </p><p className={styles.brown}>Levočská 5, Prešov, 080 01</p></pre>
               <p className={styles.addressRow}>Telefón +421 905 181 972</p>
-              <p className={styles.addressRow}>Mesto<pre> </pre><p className={styles.brown}>Prešov / Slovakia</p></p>
+              <pre><p className={styles.addressRow}>Mesto </p><p className={styles.brown}>Prešov / Slovakia</p></pre>
               <div className={styles.bottomLine}></div>
             </div>
 
@@ -95,7 +95,7 @@ function ContactPage() {
                   <input placeholder="Telefón" type="tel" required/>
                 </div>
                 <div className={styles.column}>
-                  <textarea minlength="10" placeholder="Odkaz..." cols="30" rows="7" required></textarea>
+                  <textarea minLength="10" placeholder="Odkaz..." cols="30" rows="7" required></textarea>
                 </div>
               </div>
               <div className={styles.row} id="contactSecondAnim">
@@ -110,7 +110,7 @@ function ContactPage() {
             <div className={styles.logoWrapper}>
               <LogoFooterSvg className={styles.logoFooter}></LogoFooterSvg>
               <p className={styles.brown}>Designed by</p>
-              <p className={styles.letterSpacing}>PRAETORI <p className={styles.brown}>STUDIO</p></p>
+              <div className={styles.letterSpacing}>PRAETORI <p className={styles.brown}>STUDIO</p></div>
               <p className={styles.brown}>2016</p>
               <p className={styles.brown}>©</p>
             </div>

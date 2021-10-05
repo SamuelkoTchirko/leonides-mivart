@@ -207,9 +207,14 @@
                         justify-content: center;
                         flex-direction: row;
 
-                        .brown{
-                            color: $rosybrown;
-                        }
+                    }
+                    .brown{
+                        color: $rosybrown;
+                    }
+
+                    pre{
+                        display: flex;
+                        flex-direction: row;
                     }
 
                     .bottomLine{
@@ -348,6 +353,7 @@
                         font-size: 12px;
 
                         display: flex;
+                        align-items: center;
 
                         .brown{
                             margin-left: 4px;

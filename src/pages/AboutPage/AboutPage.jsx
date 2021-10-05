@@ -115,16 +115,16 @@ function AboutPage() {
               Hodnoty
             </h2>
             <br />
-            <p className={styles.grayText}>
-              Transparentnosť<br />
-              Etika<br />
-              Odvaha<br />
-              Viera<br />
-              Líderstvo<br />
-              Vzdelávanie<br />
-              Tímovosť<br />
-              Presvedčenie<br />
-            </p>
+            <div className={styles.grayTextWrap}>
+              <p>Transparentnosť</p><br />
+              <p>Etika</p><br />
+              <p>Odvaha</p><br />
+              <p>Viera</p><br />
+              <p>Líderstvo</p><br />
+              <p>Vzdelávanie</p><br />
+              <p>Tímovosť</p><br />
+              <p>Presvedčenie</p><br />
+            </div>
             <br />
             <div className={styles.bottomContent}>
               <div className={styles.left}>
