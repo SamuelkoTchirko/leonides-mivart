@@ -96,7 +96,7 @@ function NeedsPage() {
               <div className="tab9"><CircleTab first_line="" second_line="Sporenie" image="menu-need-3.jpg"></CircleTab></div>
               <div className="tab10"><CircleTab first_line="" second_line="Dôchodok" image="menu-need-4.jpg"></CircleTab></div>
             </div>
-            <p>
+            <p className={styles.grayText}>
               <i>“ V Taliansku ľudia často používajú termín „sacrificio“ 
               čo znamená odriekanie - obetovanie, ktoré často znášajú, aby zlepšili svoj život, 
               aj život svojich detí i celej rodiny. Obetujú mnoho príjemných a lákavých vecí preto, 
@@ -108,7 +108,7 @@ function NeedsPage() {
               zásadne nezmení. Sú štyri základné dôvody prečo si ľudia najčastejšie sporia. ”
               </i>
             </p>
-            <ul>
+            <ul className={styles.grayText}>
               <li>
                 <h3>
                   Deti

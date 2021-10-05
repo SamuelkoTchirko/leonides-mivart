@@ -1,7 +1,19 @@
+@import "../../assets/colors.scss";
+
 @media (max-width: 1000px){
     .wrapper{
         width: 95%;
     }
+}
+
+@font-face {
+    font-family: 'Mostra Nuova Bold';
+    src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
 }
 
 .wrapper{
@@ -100,16 +112,39 @@
             flex-direction: column;
 
             .contentHeader{
+                font-family: 'Mostra Nuova Bold', sans-serif;
+                font-weight: lighter;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $darkgray;
+
                 width: 100%;
                 height: 20vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 background-image: url(../../images/header-contact.png);
                 background-size: auto 45%;
                 background-repeat: no-repeat;
                 background-position: center; 
+
+                h2{
+                    position: relative;
+                    //top: 3.5vh;
+                    //padding: 0;
+                    margin: 0;
+                }
+
+                p{
+                    padding-bottom: 1vh;
+                    margin: 0;
+                    font-family: 'Myriad Pro Light', sans-serif;
+                    text-transform: uppercase;
+                    color: $rosybrown;
+                    font-size: small;
+                    letter-spacing: 4px;
+                }
             }
 
             .content{
@@ -123,7 +158,7 @@
 
                 .addressWrapper{
                     width: 70%;
-                    margin-top: 7vh;
+                    margin-top: 8vh;
                     font-size: smaller;
                     display: flex;
                     flex-direction: column;
@@ -131,10 +166,14 @@
                     justify-content: space-around;
 
                     p{
+                        font-family: 'Mostra Nuova Bold', sans-serif;
                         margin-bottom: 0;
                         margin-top: 0;
                         padding-top: 0;
                         padding-bottom: 0;
+                        color: $textgray;
+                        font-size: 16px;
+                        text-transform: uppercase;
                     }
 
                     .addressRow{
@@ -144,7 +183,7 @@
                         flex-direction: row;
 
                         .brown{
-                            color: burlywood;
+                            color: $rosybrown;
                         }
                     }
 
@@ -152,7 +191,7 @@
                         margin-top: 2vh;
                         min-width: 25px;
                         min-height: 2px;
-                        background-color: burlywood;
+                        background-color: $rosybrown;
                     }
                 }
 
@@ -179,19 +218,22 @@
                             justify-content: center;;
 
                             input{
+                                font-family: 'Myriad Pro Light' , sans-serif;
                                 margin-bottom: 2vh;
                                 margin-top: 2vh;
                                 border: none;
                                 background: rgba(0,0,0,0);
-                                border-bottom: burlywood 1px solid;
+                                border-bottom: $rosybrown 1px solid;
                                 width: 20vw;
                             }
 
                             textarea{
+                                font-family: 'Myriad Pro Light' , sans-serif;
+                                font-size: small;
                                 margin-left: 2vw;
                                 border: none;
                                 background: rgba(0,0,0,0);
-                                border: burlywood 1px solid;
+                                border: $rosybrown 1px solid;
                                 width: 20vw;
                                 resize: none;
                             }
@@ -210,11 +252,14 @@
                             width: 100%;
 
                             button{
+                                font-family: 'Myriad Pro Light' , sans-serif;
+                                font-size: 15px;
+                                color: $textgray;
                                 cursor: pointer;
                                 margin-top: 10vh;
                                 border: none;
                                 background: rgba(0,0,0,0);
-                                border-bottom: burlywood 1px solid;
+                                border-bottom: $rosybrown 1px solid;
                                 width: 100%;
                                 padding: 5px;
                             }
@@ -222,7 +267,7 @@
                             .buttonLine{
                                 width: 100%;
                                 height: 1px;
-                                background-color: burlywood;
+                                background-color: $rosybrown;
                                 -o-transition:.3s;
                                 -ms-transition:.3s;
                                 -moz-transition:.3s;
@@ -261,14 +306,16 @@
                     }
 
                     p{
-                        font-size: 10px;
+                        color: $textgray;
+                        font-family: 'Myriad Pro Light' , sans-serif;
+                        font-size: 12px;
                         letter-spacing: 1.5px;
                         padding: 0;
                         margin: 0;
                     }
 
                     .brown{
-                        color: burlywood;
+                        color: $rosybrown;
                     }
 
                     .letterSpacing{

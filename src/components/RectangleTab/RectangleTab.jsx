@@ -18,7 +18,7 @@ function RectangleTab(props) {
 
   return (
     <div className={styles.wrapper}>
-        <p>
+        <p className={styles.tabText}>
             {props.first_line}
             <br />
             {props.second_line}

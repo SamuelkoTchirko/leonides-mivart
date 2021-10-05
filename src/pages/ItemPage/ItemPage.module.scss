@@ -1,3 +1,5 @@
+@import "../../assets/colors.scss";
+
 @media (max-width: 1380px){
     .wrapper{
         
@@ -89,6 +91,8 @@
     }
 
     h2{
+        color: white;
+        font-family: 'Mostra Nuova Bold', sans-serif;
         padding: 0;
         text-align: center;
 
@@ -123,12 +127,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $pinkbrown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $pinkbrown;
         }
 
         h2{
@@ -141,12 +145,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $silver;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $silver;
         }
 
         h2{
@@ -159,12 +163,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $pinkbrown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $pinkbrown;
         }
 
         h2{
@@ -177,12 +181,12 @@
 
         .leftPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $rosybrown;
         }
 
         .rightPanel{
             transform: rotate3d(0, 1, 0, 0deg);
-            background-color: brown;
+            background-color: $rosybrown;
         }
 
         h2{

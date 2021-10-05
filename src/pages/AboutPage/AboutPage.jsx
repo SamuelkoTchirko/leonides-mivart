@@ -71,7 +71,7 @@ function AboutPage() {
             <h2>
               Inšpirovaní históriou
             </h2>
-            <p>
+            <p className={styles.grayText}>
               Staroveké Grécko je označované kolískou európskej civilizácie. Najpokrokovejším objavom je demokracia, 
               o ktorú sa usilujú všetky súčasné štátne zriadenia. Veľkým gréckym zázrakom je vznik filozofie. 
               Diela starovekých gréckych filozofov sú studnicou nevyčerpateľného poznania a inšpirácie. 
@@ -81,7 +81,7 @@ function AboutPage() {
               Zhromaždil preto najväčšiu armádu tej doby s úmyslom podmaniť si celé Grécko.
             </p>
             <br />
-            <p>
+            <p className={styles.grayText}>
               Na odpor sa mu postavil jediný človek z celého Grécka, kráľ Sparty Leonidas. 
               Kráľ, ktorý chcel uchrániť svoj národ pred smrťou a otroctvom. Leonidas vedel, 
               že jediná možnosť postaviť sa na odpor je v priesmyku v Termopylách. Tam Peržanom nepomôže ani mnohopočetná presila, keďže sa bude bojovať na úzkom úseku priesmyku. 
@@ -91,7 +91,7 @@ function AboutPage() {
               V tejto dobe sa roztrieštené Grécko spojilo a vyrazilo do boja proti Peržanom, ktorých definitívne porazili. 
             </p>
             <br />
-            <p>
+            <p className={styles.grayText}>
               Odkaz pre dnešné generácie <br />
               Táto bitka a nekonečné hrdinstvo Leonidasa bola jedným z najzásadnejších okamihov vývoja našej ľudskej civilizácie. Túžba pokračovať bola silnejšia, 
               ako túžba prestať. <i>Hrdinstvo, odvaha, vytrvalosť, vášeň a túžba</i> nás inšpirovala a stále inšpiruje v spoločnosti LEONIDES.
@@ -101,7 +101,7 @@ function AboutPage() {
               Vízia a poslanie LEONIDES
             </h2>
             <br />
-            <p>
+            <p className={styles.grayText}>
               Kráľ Leonidas sa svojou odvahou a vierou vzoprel otroctvu a tyranii Perzskej ríše, čím uchránil základné ľudské hodnoty ako je sloboda a demokracia. 
               Svojim hrdinstvom ovplyvnil vývoj celej civilizácie až po dnešok. Inšpirovaní históriou sme sa aj my v spoločnosti LEONIDES od jej vzniku zaviazali, 
               že naším poslaním bude pozitívne transformovať ľudské životy. Naším klientom prinášame transparentné informácie pod „ pokrývkou“ finančného trhu, 
@@ -115,7 +115,7 @@ function AboutPage() {
               Hodnoty
             </h2>
             <br />
-            <p>
+            <p className={styles.grayText}>
               Transparentnosť<br />
               Etika<br />
               Odvaha<br />
@@ -131,7 +131,7 @@ function AboutPage() {
 
               </div>
               <div className={styles.middle}>
-                <p>
+                <p className={styles.grayText}>
                   STABILITA A ZÁZEMIE SPOLOČNOSTI<br />
                   Vznik v roku 2009. Viac ako 10 ročná prax v odbore.<br />
                   Sme členom AFISP. Povolenie NBS, PAG.<br />

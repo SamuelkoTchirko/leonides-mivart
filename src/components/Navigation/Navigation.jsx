@@ -16,7 +16,7 @@ function Navigation() {
     <>
       <div className={opened ? styles.menuOpened : styles.menuClosed}>
         <div className={styles.upper}>
-            <h3>MENU</h3>
+            <h3 className={styles.menuTitle}>MENU</h3>
             <MenuRotSvg className={styles.menuSvgRot} onClick={() => {
                 setOpened(!opened)
             }}></MenuRotSvg>

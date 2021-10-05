@@ -1,9 +1,20 @@
+@import "../../assets/colors.scss";
+
 @media (max-width: 1000px){
     .wrapper{
         width: 95%;
     }
 }
 
+@font-face {
+    font-family: 'Mostra Nuova Bold';
+    src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+}
 .wrapper{
     //height: 30%;
     z-index: 0;
@@ -96,19 +107,55 @@
             flex-direction: column;
 
             .contentHeader{
+                font-family: 'Mostra Nuova Bold', sans-serif;
+                font-weight: lighter;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $darkgray;
+
                 width: 100%;
                 height: 20vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 background-image: url(../../images/header-need.svg);
                 background-size: auto 100%;
                 background-repeat: no-repeat;
                 background-position: center; 
+
+                h2{
+                    position: relative;
+                    //top: 3.5vh;
+                    //padding: 0;
+                    margin: 0;
+                }
+
+                p{
+                    padding-bottom: 1vh;
+                    margin: 0;
+                    font-family: 'Myriad Pro Light', sans-serif;
+                    text-transform: uppercase;
+                    color: $rosybrown;
+                    font-size: small;
+                    letter-spacing: 4px;
+                }
             }
 
             .content{
+                h3{
+                    font-family: 'Mostra Nuova', sans-serif;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $rosybrown;
+                }
+
+                i{
+                    padding: 0;
+                    margin: 0;
+                    color: $rosybrown;
+                }
+
                 width: 55%;
                 display: flex;
                 flex-direction: column;
@@ -119,7 +166,7 @@
                     i{
                         padding: 0;
                         margin: 0;
-                        color: burlywood;
+                        color: $rosybrown;
                     }
                 }
 
@@ -129,6 +176,22 @@
                     align-items: center;
                     justify-content: center;
                     margin-bottom: 6vh;
+
+                    p{
+                        text-align: center;
+                        //color: $rosybrown;
+                    }
+                }
+
+                .grayText{
+                    font-family: 'Myriad Pro Light' , sans-serif;
+                    text-align: left;
+                    color: $textgray;
+                    i{
+                        padding: 0;
+                        margin: 0;
+                        color: $rosybrown;
+                    }
                 }
                 
                 ul{

@@ -1,9 +1,25 @@
+@import "../../assets/colors.scss";
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Mostra Nuova';
+    src: url(../../fonts/MostraNuova-Regular.ttf) format('truetype');
+}
+
 a{
     color: black;
     text-decoration: none; /* no underline */
 }
 
 .wrapper{
+    font-family: 'Myriad Pro Light', sans-serif;
+    text-transform: uppercase;
+    color: $rosybrown;
+    font-size: smaller;
     width: 8vw;
     //padding-top: 5vh;
     display: flex;
@@ -21,7 +37,7 @@ a{
         width: 85px;
         //background-color: brown;
         overflow: hidden;
-        border: 3px solid burlywood;
+        border: 4.2px solid $rosybrown;
         border-radius: 50%;
 
         //position: relative;
@@ -52,20 +68,22 @@ a{
     }
 
     .number{
+        font-family: 'Mostra Nuova', sans-serif;
         padding: 0;
         margin: 0;
         position: relative;
         bottom: 14vh;
         text-align: end;
-        font-size: x-small;
+        font-size: xx-small;
         width: 100%;
-        border-bottom: 2px solid burlywood;
+        border-bottom: 2px solid $rosybrown;
     }
 
     .text{
         width: 100%;
         padding: 0;
         margin: 0;
+        margin-top: 4px;
         position: relative;
         bottom: 14vh;
         font-size: smaller;
@@ -75,11 +93,18 @@ a{
 
 .wrapper:hover{
     cursor: pointer;
+    color: $pinkbrown;
 
     .imgHolder{
+        border: 4.2px solid $pinkbrown;
+
         img{
             filter: none;
         }
+    }
+
+    .number{
+        border-bottom: 2px solid $pinkbrown;
     }
 
     .circle{

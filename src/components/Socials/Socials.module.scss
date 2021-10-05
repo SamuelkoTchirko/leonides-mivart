@@ -1,3 +1,10 @@
+@import "../../assets/colors.scss";
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
+}
+
 .wrapper{
     position: fixed;
     bottom: 0;
@@ -15,6 +22,7 @@
     margin-bottom: 3.5vh;
 
     .column{
+        //font-family: 'Myriad Pro Light';
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -36,7 +44,7 @@
 
             margin-top: 2px;
             margin-bottom: 2px;
-            background-color: burlywood;
+            background-color: $rosybrown;
             min-height: 20px;
             min-width: 20px;
             max-height: 20px;
@@ -56,7 +64,7 @@
             
             margin-top: 2px;
             margin-bottom: 2px;
-            background-color: burlywood;
+            background-color: $rosybrown;
             min-height: 20px;
             min-width: 20px;
             max-height: 20px;
@@ -77,7 +85,7 @@
             cursor: pointer;
             margin-top: 2px;
             margin-bottom: 2px;
-            background-color: burlywood;
+            background-color: $rosybrown;
             min-height: 20px;
             min-width: 20px;
             max-height: 20px;

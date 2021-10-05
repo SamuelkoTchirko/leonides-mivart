@@ -100,26 +100,26 @@ function TransformPage() {
               LEONIDES ti ponúka nové možnosti!
             </p>
             <br />
-            <p>Kariéra:</p>
-            <i>Vyvážená a motivujúca!</i>
+            <p className={styles.grayText}>Kariéra:</p>
+            <i className={styles.grayText}>Vyvážená a motivujúca!</i>
             <br />
-            <p>Sociálny program:</p>
-            <i>Zabezpečenie krytia v prípade neočakávaných udalostí pre manažérov</i>
+            <p className={styles.grayText}>Sociálny program:</p>
+            <i className={styles.grayText}>Zabezpečenie krytia v prípade neočakávaných udalostí pre manažérov</i>
             <br />
-            <p>Auto koncept:</p>
-            <i>luxusné autá</i>
+            <p className={styles.grayText}>Auto koncept:</p>
+            <i className={styles.grayText}>luxusné autá</i>
             <br />
-            <p>Akcionársky model:</p>
-            <i>stať sa spolumajiteľom</i>
+            <p className={styles.grayText}>Akcionársky model:</p>
+            <i className={styles.grayText}>stať sa spolumajiteľom</i>
             <br />
-            <p>Dovolenky:</p>
-            <i>Exkluzívna dovolenka 2 krát do roka</i>
+            <p className={styles.grayText}>Dovolenky:</p>
+            <i className={styles.grayText}>Exkluzívna dovolenka 2 krát do roka</i>
             <br />
-            <p>Bonusy:</p>
-            <i>Motivačné súťaže a benefity</i>
+            <p className={styles.grayText}>Bonusy:</p>
+            <i className={styles.grayText}>Motivačné súťaže a benefity</i>
             <br />
-            <p>Prestížne vzdelávanie:</p>
-            <i>NLP, akadémia vzdelávania</i>
+            <p className={styles.grayText}>Prestížne vzdelávanie:</p>
+            <i className={styles.grayText}>NLP, akadémia vzdelávania</i>
             <br />
             <OrnamentSvg className={styles.ornament}></OrnamentSvg>
           </div>

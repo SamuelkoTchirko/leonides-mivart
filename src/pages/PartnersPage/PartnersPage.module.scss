@@ -1,7 +1,19 @@
+@import "../../assets/colors.scss";
+
 @media (max-width: 1000px){
     .wrapper{
         width: 95%;
     }
+}
+
+@font-face {
+    font-family: 'Mostra Nuova Bold';
+    src: url(../../fonts/MostraNuova-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(../../fonts/MyriadPro-Light.ttf) format('truetype');
 }
 
 .wrapper{
@@ -101,16 +113,39 @@
             flex-direction: column;
 
             .contentHeader{
+                font-family: 'Mostra Nuova Bold', sans-serif;
+                font-weight: lighter;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $darkgray;
+
                 width: 100%;
                 height: 20vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 background-image: url(../../images/header-partners.png);
                 background-size: auto 45%;
                 background-repeat: no-repeat;
                 background-position: center; 
+
+                h2{
+                    position: relative;
+                    //top: 3.5vh;
+                    //padding: 0;
+                    margin: 0;
+                }
+
+                p{
+                    padding-bottom: 1vh;
+                    margin: 0;
+                    font-family: 'Myriad Pro Light', sans-serif;
+                    text-transform: uppercase;
+                    color: $rosybrown;
+                    font-size: small;
+                    letter-spacing: 4px;
+                }
             }
 
             .content{
@@ -141,12 +176,14 @@
                             flex-direction: row;
 
                             p{
+                                font-family: 'Myriad Pro Light' , sans-serif;
+                                color: $textgray;
                                 margin-left: 2vw;
                                 margin-right: 2vw;
                                 margin-bottom: 5vh;
                                 margin-top: 2vh;
                                 padding-bottom: 4px;
-                                border-bottom: 4px solid burlywood;
+                                border-bottom: 4px solid $rosybrown;;
                             }
                         }
                     }

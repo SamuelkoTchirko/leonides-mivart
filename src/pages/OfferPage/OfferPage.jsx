@@ -92,15 +92,15 @@ function OfferPage() {
             <h3>
               Informácie
             </h3>
-            <p>
+            <p className={styles.grayText}>
                 Žijeme v informačnej dobe a vďaka internetu a mobilnej komunikácií je dostupnosť a výmena informácií na najvyššej úrovni v histórií. Trendy sa otočili. Tak, ako sa v minulosti bolo obtiažné k informáciám dostať, v dnešnej dobe je tých informácií veľmi veľa. Preto je náročné z toho kvanta informácií si správne vybrať. Prinášame klientom transparentné informácie z finančného trhu. Ponúkame reálne riešenia, výhodne produkty a zodpovedný prístup, čo nám umožňuje riešiť skutočné potreby klientov. Touto službou dávame ľuďom možnosti, ako zmeniť svoj život k lepšiemu.
             </p>
             <br />
-            <p>
+            <p className={styles.grayText}>
                 Skĺbili sme to do štyroch základných bodov:
             </p>
             <br />
-            <ul>
+            <ul className={styles.grayText}>
                 <li>Ako sa nenechať zaviesť</li>
                 <li>Ako neplatiť zbytočne poplatky</li>
                 <li>Ako a kam investovať</li>
@@ -111,11 +111,11 @@ function OfferPage() {
                 Osobný rozvoj
             </h3>
             <br />
-            <p>
+            <p className={styles.grayText}>
                 Výsledok z uskutočnených prieskumov spokojnosti v zamestnaní ukázal, že väčšina ľudí robí prácu, ktorá ich nebaví a majú pocit, že sú za ňu slabo ohodnotení. Pravda je taká, že príjem človeka sa rovná znalostiam, ktoré ten človek má a aká je jeho hodnota na trhu práce. Je to jednoduché. Chcete zarábať viac? Zvýšte svoju hodnotu a trh Vás zaplatí. Práve preto ľuďom ponúkame možnosť zúčastniť sa našej akadémie vzdelávania, kde si môžu zvýšiť svoju vnútornú hodnotu, ktorá im pomôže získať lepšie uplatnenie v živote. Rovnako ponúkame možnosť získať prestížne certifikáty v rámci psychológie, obchodu, manažmentu a riadenia.
             </p>
             <br />
-            <ul>
+            <ul className={styles.grayText}>
                 <li>Aktívny sebarozvoj</li>
                 <li>Zvýšenie svojej vnútornej hodnoty</li>
                 <li>Akadémia vzdelávania</li>
@@ -126,17 +126,17 @@ function OfferPage() {
                 Príležitosť
             </h3>
             <br />
-            <p>
+            <p className={styles.grayText}>
                 Možno ste sa už stretli s názorom, že doba je ťažká, že kríza ešte neskončila, že na Slovensku je málo príležitostí. Zamýšľali ste sa ale nad tým, kedy v histórii bola ta správna doba? Ľudia si neuvedomujú, že nikdy v histórií nebola lepšia doba z pohľadu príležitostí, ako je dnes. Žijeme v informačnej dobe. Vďaka internetu a mobilnej komunikácií je dostupnosť a výmena informácií na najvyššej úrovni. Vďaka otvoreniu hraníc nastal voľný pohyb tovarov a služieb. Prichádzajú inovácie, technológie a stým aj nové príležitosti. Životná úroveň Slovákov sa každým rokom zvyšuje a tým aj ich potreby.
             </p>
             <i>DNES JE TA NAJLEPŠIA DOBA AKÁ TU KEDY BOLA!</i>
             <br />
-            <p>
+            <p className={styles.grayText}>
                 Pre správnych ľudí - správna príležitosť! LEONIDES dáva šancu každému, kto chce zmeniť svoj život k lepšiemu a žiť svoje sny. Motivujeme a povzbudzujme ľudí, aby si dokázali vytvoriť vlastnú budúcnosť a nabrali odvahu zobrať život do vlastných rúk. Jedinečný systém, poslanie a vízia pomáha k vytváraniu hodnôt a tým prispievame k dobru nielen našich klientov, ale celej spoločnosti.
             </p>
             <br />
-            <p>Obchodná príležitosť ktorá Vám môže priniesť:</p>
-            <ul>
+            <p className={styles.grayText}>Obchodná príležitosť ktorá Vám môže priniesť:</p>
+            <ul className={styles.grayText}>
                 <li>Príjem naviac</li>
                 <li>Finančnú nezávislosť</li>
                 <li>Možnosť pomáhať iným</li>
