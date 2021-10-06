@@ -16,7 +16,7 @@
     }
 }
 
-@media (max-width: 570px){
+@media (max-width: 600px){
     .contentHeader{
         margin-top: 10vh;
     }
@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 450px){
+    .contentHeader{
+        margin-top: 20vh;
+    }
+
     .headerSection{
         max-height: 50vh;
 
