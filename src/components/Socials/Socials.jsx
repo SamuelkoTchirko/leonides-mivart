@@ -4,8 +4,6 @@ import styles from "./Socials.module.scss";
 
 function Socials() {
 
-    const[opened, setOpened] = useState(false)
-
   return (
     <>
       <div className={styles.wrapper}>
